@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4A90E2</color>
+    <color name="colorPrimaryDark">#4A90E2</color>
+    <color name="colorAccent">#FFFFFF</color>
+
+    <color name="ripple">#bcb5b5</color>
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorLBlack35">#242424</color>
+    <color name="colorLBlack83">#535353</color>
+    <color name="colorLGold">#FCDAB0</color>
+    <color name="colorGold">#CDA16A</color>
+    <color name="colorDBrown">#573E20</color>
+    <color name="colorLBrown">#906A3D</color>
+    <color name="colorLGrey">#EFEFEF</color>
+    <color name="colorGrey">#A2A59F</color>
+    <color name="colorYellow">#F8AC19</color>
+</resources>
