@@ -23,10 +23,10 @@
             ripple:rv_centered="false">
 
             <ImageView
-                android:layout_width="25dp"
-                android:layout_height="25dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:layout_centerInParent="true"
-                android:background="@mipmap/ic_launcher"/>
+                android:background="@mipmap/ic_back"/>
         </com.ccomputing.assessment.utils.RippleView>
 
         <TextView
@@ -48,10 +48,10 @@
             ripple:rv_centered="false">
 
             <ImageView
-                android:layout_width="25dp"
-                android:layout_height="25dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:layout_centerInParent="true"
-                android:background="@mipmap/ic_launcher"/>
+                android:background="@mipmap/ic_search"/>
         </com.ccomputing.assessment.utils.RippleView>
 
     </RelativeLayout>
@@ -96,8 +96,8 @@
                         android:layout_width="25dp"
                         android:layout_height="25dp"
                         android:layout_gravity="center"
-                        android:layout_marginRight="12dp"
-                        android:background="@mipmap/ic_launcher"/>
+                        android:layout_marginRight="8dp"
+                        android:background="@mipmap/ic_sort"/>
 
                     <TextView
                         android:id="@+id/tvSortbyTxt"
@@ -130,14 +130,14 @@
                         android:layout_width="25dp"
                         android:layout_height="25dp"
                         android:layout_gravity="center"
-                        android:layout_marginRight="12dp"
-                        android:background="@mipmap/ic_launcher"/>
+                        android:layout_marginRight="8dp"
+                        android:background="@mipmap/ic_filter"/>
 
                     <TextView
                         android:id="@+id/tvFilterTxt"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/colorPrimary"
+                        android:textColor="@color/colorLBlack35"
                         android:text="Filter"
                         android:maxLines="1"
                         android:layout_gravity="center"

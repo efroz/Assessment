@@ -29,7 +29,7 @@
                 android:textColor="@color/colorDBrown"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentTop="true"
-                android:text="Dubai"
+                android:text=""
                 android:minLines="1"
                 android:maxLines="2"
                 android:layout_toLeftOf="@+id/btnPopRestaurant"
@@ -43,7 +43,7 @@
                 android:textColor="@color/colorLBrown"
                 android:layout_below="@+id/tvCLocName"
                 android:layout_alignParentLeft="true"
-                android:text="Sunday"
+                android:text=""
                 android:textSize="20sp"/>
 
             <TextView
@@ -53,7 +53,7 @@
                 android:textColor="@color/colorLBrown"
                 android:layout_below="@+id/tvCLocDay"
                 android:layout_alignParentLeft="true"
-                android:text="Clear with periodic clouds"
+                android:text=""
                 android:textSize="17sp"/>
 
             <Button
@@ -88,15 +88,14 @@
                     android:id="@+id/ivCWeatherIcon"
                     android:layout_width="90dp"
                     android:layout_height="90dp"
-                    android:layout_gravity="center"
-                    android:background="@color/colorPrimary"/>
+                    android:layout_gravity="center"/>
 
                 <TextView
                     android:id="@+id/tvCTemperature"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/colorDBrown"
-                    android:text="35C|F"
+                    android:text=""
                     android:maxLines="1"
                     android:textStyle="bold"
                     android:layout_marginLeft="20dp"
@@ -119,7 +118,7 @@
                     android:layout_height="wrap_content"
                     android:textColor="@color/colorDBrown"
                     android:layout_marginBottom="4dp"
-                    android:text="10%"
+                    android:text=""
                     android:textStyle="bold"
                     android:layout_gravity="center"
                     android:textSize="16sp"/>
@@ -147,7 +146,7 @@
                     android:layout_height="wrap_content"
                     android:textColor="@color/colorDBrown"
                     android:layout_marginBottom="4dp"
-                    android:text="34%"
+                    android:text=""
                     android:textStyle="bold"
                     android:layout_gravity="center"
                     android:textSize="16sp"/>
@@ -175,7 +174,7 @@
                     android:layout_height="wrap_content"
                     android:textColor="@color/colorDBrown"
                     android:layout_marginBottom="4dp"
-                    android:text="29Km/h"
+                    android:text=""
                     android:textStyle="bold"
                     android:layout_gravity="center"
                     android:textSize="16sp"/>

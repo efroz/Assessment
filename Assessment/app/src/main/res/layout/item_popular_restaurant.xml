@@ -27,7 +27,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_centerVertical="true"
-            android:layout_marginLeft="12dp"
+            android:layout_marginLeft="15dp"
             android:layout_toRightOf="@+id/ivPlaceImg">
 
             <RelativeLayout
@@ -49,53 +49,71 @@
 
                 <ImageView
                     android:id="@+id/ivTagSBoardIcon"
-                    android:layout_width="22dp"
-                    android:layout_height="22dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
                     android:layout_alignParentRight="true"
-                    android:background="@color/colorPrimary" />
+                    android:background="@mipmap/ic_direction" />
             </RelativeLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:weightSum="1">
 
-                <!-- Location -->
-                <ImageView
-                    android:layout_width="18dp"
-                    android:layout_height="18dp"
-                    android:layout_gravity="center"
-                    android:background="@color/colorPrimary" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4"
+                    android:orientation="horizontal">
+                    <!-- Location -->
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_gravity="center"
+                        android:background="@mipmap/ic_pin" />
 
-                <TextView
-                    android:id="@+id/tvLocName"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/colorLBlack35"
-                    android:text="Dubai"
-                    android:maxLines="1"
-                    android:layout_marginLeft="4dp"
-                    android:layout_gravity="center"
-                    android:textSize="12sp"/>
-                <!-- Cuisines -->
-                <ImageView
-                    android:layout_width="18dp"
-                    android:layout_height="18dp"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="8dp"
-                    android:background="@color/colorPrimary" />
+                    <TextView
+                        android:id="@+id/tvLocName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorLBlack35"
+                        android:text="Dubai"
+                        android:maxLines="1"
+                        android:layout_marginLeft="4dp"
+                        android:layout_gravity="center"
+                        android:textSize="12sp"/>
+                </LinearLayout>
 
-                <TextView
-                    android:id="@+id/tvCuisines"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/colorLBlack35"
-                    android:text="Lebanese"
-                    android:layout_marginLeft="4dp"
-                    android:maxLines="1"
-                    android:layout_gravity="center"
-                    android:textSize="12sp"/>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.6"
+                    android:orientation="horizontal">
+
+                    <!-- Cuisines -->
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="8dp"
+                        android:background="@mipmap/ic_restaurant_type" />
+
+                    <TextView
+                        android:id="@+id/tvCuisines"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorLBlack35"
+                        android:text="Lebanese"
+                        android:layout_marginLeft="4dp"
+                        android:maxLines="1"
+                        android:layout_gravity="center"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+
+
+
             </LinearLayout>
 
             <LinearLayout
@@ -114,14 +132,15 @@
                     android:textSize="12sp"/>
 
                 <RatingBar
-                    style="@style/RatingBarTheme"
                     android:id="@+id/rBarRestaurant"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:rating="3.8"
                     android:numStars="5"
                     android:layout_marginLeft="4dp"
-                    android:stepSize="0.5" />
+                    android:stepSize="0.5"
+                    android:theme="@style/RatingBarTheme"
+                    style="?attr/ratingBarStyleSmall"/>
 
                 <TextView
                     android:id="@+id/tvReviewsCount"

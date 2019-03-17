@@ -3,6 +3,7 @@ package com.ccomputing.assessment.adapters;
 import android.app.Activity;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,11 +12,14 @@ import android.widget.RatingBar;
 import android.widget.TextView;
 
 import com.ccomputing.assessment.R;
+import com.ccomputing.assessment.model.NearbyRestaurant;
+
+import java.util.List;
 
 public class AdtPopularRestaurant extends RecyclerView.Adapter<AdtPopularRestaurant.MyViewHolder> {
 
     private Activity context;
-
+    private List<NearbyRestaurant> list;
 
     class MyViewHolder extends RecyclerView.ViewHolder {
 
@@ -37,9 +41,9 @@ public class AdtPopularRestaurant extends RecyclerView.Adapter<AdtPopularRestaur
         }
     }
 
-
-    public AdtPopularRestaurant(Activity context) {
+    public AdtPopularRestaurant(Activity context,List<NearbyRestaurant> list) {
         this.context = context;
+        this.list = list;
     }
 
     @NonNull
@@ -54,11 +58,24 @@ public class AdtPopularRestaurant extends RecyclerView.Adapter<AdtPopularRestaur
     @Override
     public void onBindViewHolder(@NonNull final AdtPopularRestaurant.MyViewHolder holder, final int position) {
 
+       try {
+           holder.tvLocName.setText(list.get(position).getLocName());
+           holder.tvRestaurantName.setText(list.get(position).getName());
+           holder.tvCuisines.setText(list.get(position).getCruise());
+
+           float valRating = list.get(position).getRating().floatValue();
+           holder.rBarRestaurant.setRating(valRating);
+
+           holder.tvReviewsCount.setText(list.get(position).getReviews() + "reviews");
+       }catch (Exception e){
+
+       }
+
     }
 
 
     @Override
     public int getItemCount() {
-        return 3;
+        return list.size();
     }
 }
